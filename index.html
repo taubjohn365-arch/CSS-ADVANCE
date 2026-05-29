@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechMart | Advanced CSS Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a href="#" class="brand">
+        <span class="brand__mark">TM</span>
+        <div>
+          <p class="brand__name">TechMart</p>
+          <p class="brand__tag">Modern gadgets delivered</p>
+        </div>
+      </a>
+      <div class="header-actions">
+        <button class="button button--ghost">Login</button>
+        <button class="button button--primary button--icon">
+          Cart
+          <span class="badge" aria-label="3 items in cart">3</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__copy">
+          <span class="eyebrow">Exclusive spring drops</span>
+          <h1>Upgrade your setup with premium tech essentials.</h1>
+          <p class="hero__text">Shop curated laptops, audio, and accessories built for work, play, and everything in between.</p>
+          <div class="hero__actions">
+            <a href="#products" class="button button--cta">Shop deals</a>
+            <a href="#" class="button button--ghost">Explore collection</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__badge">Top Picks</div>
+          <div class="hero__grid"></div>
+        </div>
+      </section>
+
+      <section class="filters" aria-label="Product categories">
+        <button class="pill pill--active">All</button>
+        <button class="pill">Laptops</button>
+        <button class="pill">Headphones</button>
+        <button class="pill">Accessories</button>
+      </section>
+
+      <section class="product-grid" id="products">
+        <article class="product-card product-card--sale" data-rating="4.9">
+          <div class="product-card__media">
+            <img src="products/laptop.svg" alt="Slim laptop product" />
+            <span class="product-card__label">Sale</span>
+          </div>
+          <div class="product-card__body">
+            <h2>BladeEdge 14</h2>
+            <p>Ultra-thin performance laptop with a vivid display and long battery life.</p>
+            <div class="product-card__meta">
+              <span>Intel i7 · 16GB · 512GB SSD</span>
+              <span>⭐ 4.9</span>
+            </div>
+            <div class="product-card__prices">
+              <span class="current-price">$1,149</span>
+              <span class="old-price">$1,499</span>
+            </div>
+            <button class="button button--secondary">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card product-card--low-stock" data-rating="4.7">
+          <div class="product-card__media">
+            <img src="products/headphones.svg" alt="Wireless headphones product" />
+          </div>
+          <div class="product-card__body">
+            <h2>PulseWireless</h2>
+            <p>Noise-cancelling earbuds with spatial audio and an ultra compact charging case.</p>
+            <div class="product-card__meta">
+              <span>Bluetooth 5.3 · 30h battery</span>
+              <span>⭐ 4.7</span>
+            </div>
+            <div class="product-card__prices">
+              <span class="current-price">$199</span>
+            </div>
+            <button class="button button--secondary">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-rating="4.8">
+          <div class="product-card__media">
+            <img src="products/keyboard.svg" alt="Mechanical keyboard product" />
+          </div>
+          <div class="product-card__body">
+            <h2>NovaKeys Wireless</h2>
+            <p>RGB mechanical keyboard with hot-swap switches and a sleek aluminium deck.</p>
+            <div class="product-card__meta">
+              <span>Hot-swap · Wireless</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <div class="product-card__prices">
+              <span class="current-price">$129</span>
+            </div>
+            <button class="button button--secondary btn--added">Added</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-rating="5.0">
+          <div class="product-card__media">
+            <img src="products/charger.svg" alt="Fast charger product" />
+          </div>
+          <div class="product-card__body">
+            <h2>ChargeCore 100W</h2>
+            <p>Fast charging hub with GaN technology and four USB-C ports for all your devices.</p>
+            <div class="product-card__meta">
+              <span>100W · Compact · Travel-ready</span>
+              <span>⭐ 5.0</span>
+            </div>
+            <div class="product-card__prices">
+              <span class="current-price">$69</span>
+              <span class="old-price">$89</span>
+            </div>
+            <button class="button button--secondary">Add to cart</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
